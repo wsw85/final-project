@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Gabriela|Lato:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+.container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	min-height: 100vh;
+	width: 1000px;
+	margin: 0 auto;		
+}
+
+.main-header{	
+	width: 100%;
+	background-color: #337ab7;
+}
+
+.wrapper-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.main-menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 15%;
+}
+
+.btn-menu{
+	width: 80px;
+	height: 80px;
+	align-self: center;
+	background-color: inherit;
+	border: 1px solid #aaaaaa;
+	border-radius: 5%;
+	font-family: 'Gabriela', serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: white;
+	text-shadow: 3px 3px 5px black;
+	box-shadow: 0 0 10px black;
+}
+
+.title-header {
+	padding: 30px 10px;
+	width: 85%;
+	font-family: 'Gabriela', serif;
+	font-size: 1.8rem;
+	text-align: center;
+	color: white;
+	text-shadow: 3px 3px 5px black;
+}
+
+.list-menu{
+	display: none;
+	width: 100%;	
+	list-style: none;
+	transition: font-size 0.8s;
+}
+
+.links-menu{
+	display: block;
+	width: 90%;
+	padding: 10px 20px;
+	margin: 10px auto;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;	
+}
+
+.list-menu > li > .links-menu{
+	/*background-color: #4682B4;*/
+	font-weight: bold;
+}
+
+.sub-list-menu{
+	list-style: none;
+	margin-left: 80px;
+}
+
+.links-menu:hover, .links-menu:active{
+	background-color: blue;
+	color: yellow;
+}
+
+.active{
+	display: block;	
+}
+
+.content-section{
+	padding: 40px 0px 20px 0;
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.adress, .contact, .map{
+	width: 33%;
+	padding: 20px;
+	font-family: 'Gabriela', serif;
+	font-size: 1.1rem;
+	color: white;
+	border-right: 1px solid white;
+}
+
+.map{
+	border-right: none;
+}
+
+.map > iframe{
+	display: block;
+}
+
+.center{
+	text-align: center;
+}
+
+.text-adress{
+	font-family: 'Lato', sans-serif;
+}
